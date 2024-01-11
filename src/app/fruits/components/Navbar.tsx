@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import styles from './Navbar.module.scss'
-import { NavbarProps } from './interfaces'
 import { LogoutButton } from '.'
+import { NavbarProps } from './interfaces'
+import styles from './Navbar.module.scss'
 
 export const Navbar = ({ userName }: NavbarProps) => {
     return (

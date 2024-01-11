@@ -1,9 +1,9 @@
 'use client'
 
 import Image from 'next/image'
-import styles from './LogoutButton.module.scss'
-import { deleteCookie } from 'cookies-next'
 import { useRouter } from 'next/navigation'
+import { deleteCookie } from 'cookies-next'
+import styles from './LogoutButton.module.scss'
 
 export const LogoutButton = () => {
 
@@ -16,6 +16,8 @@ export const LogoutButton = () => {
 
     return (
         <button
+            id='logout-button'
+            data-testid='logout-button'
             className={styles['logout-button']}
             onClick={onLogout}
         >

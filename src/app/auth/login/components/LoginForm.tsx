@@ -1,10 +1,10 @@
 'use client'
 
 import React, { FormEvent, useState } from 'react'
-import { setCookie } from 'cookies-next';
-import styles from './LoginForm.module.scss'
-import { LoginCredentials } from './interfaces'
 import { useRouter } from "next/navigation"
+import { setCookie } from 'cookies-next';
+import type { LoginCredentials } from './interfaces'
+import styles from './LoginForm.module.scss'
 
 export const LoginForm = () => {
     

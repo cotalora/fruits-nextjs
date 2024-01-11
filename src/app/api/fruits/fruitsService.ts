@@ -1,4 +1,4 @@
-import { FruitResponse } from "@/app/interfaces";
+import type { FruitResponse } from "@/app/interfaces";
 
 const fruits: FruitResponse[] = [
     { id: 1, name: 'Manzana', url: '/images/apple.webp', weight: 2, price: 1 },

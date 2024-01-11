@@ -1,6 +1,6 @@
 import Image from 'next/image'
+import type { FruitCardProps } from './interfaces'
 import styles from './FruitCard.module.scss'
-import { FruitCardProps } from './interfaces'
 
 export const FruitCard = ({ name, image, price, weight }: FruitCardProps) => {
     return (

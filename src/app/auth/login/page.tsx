@@ -1,8 +1,8 @@
 import Image from 'next/image'
+import { redirect } from 'next/navigation';
+import { cookies } from 'next/headers'
 import { LoginForm } from './components'
 import styles from './page.module.scss'
-import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation';
 
 export default function LoginPage() {
 

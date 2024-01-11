@@ -1,7 +1,7 @@
 
 import { getFruitsRequest } from '../api/fruits/fruitsService';
-import { Fruit, FruitResponse } from '../interfaces';
 import { FruitCard, FruitsGrid } from './components'
+import type { Fruit, FruitResponse } from '../interfaces';
 import styles from './page.module.scss'
 
 const getFruits = async (): Promise<Fruit[]> => {

@@ -1,6 +1,5 @@
 import styles from './FruitsGrid.module.scss'
-import { FruitsGridProps } from './interfaces'
-
+import type { FruitsGridProps } from './interfaces'
 
 export const FruitsGrid = ({ children }: FruitsGridProps) => {
     return (
