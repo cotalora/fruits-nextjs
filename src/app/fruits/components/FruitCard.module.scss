@@ -1,0 +1,95 @@
+.card-container {
+    border-radius: 1em;
+    background: green;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(243, 122, 65, .2);
+    position: relative;
+    overflow: hidden;
+    transition: all 300ms ease;
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 150%;
+        height: 230px;
+        background-color: rgb(243, 122, 65);
+        border-radius: 100%;
+        z-index: -1;
+        left: -63px;
+        top: 64px;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(243, 122, 65, 1);
+
+        .card-image {
+            transform: scale(1.15);
+        }
+    }
+
+    .card-image {
+        align-self: center;
+        filter: drop-shadow(0px 0px 5px rgba(243, 122, 65, .8));
+        transition: transform 300ms ease;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .card-price-weight-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .card-weight {
+                font-size: .75rem;
+                font-weight: 400;
+            }
+
+            .card-price {
+                font-size: .875rem;
+                font-weight: 500;
+            }
+        }
+
+        .card-button-add {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-self: center;
+            background: rgba(255, 255, 255, .2);
+            padding: .5em .75em;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: all 300ms ease;
+            margin-top: .5rem;
+
+            &:hover {
+                background: rgba(255, 255, 255, .4);
+            }
+
+            .button-image {
+                margin-right: .25em;
+            }
+
+            .button-span {
+                font-size: .875rem;
+                font-weight: 600;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
